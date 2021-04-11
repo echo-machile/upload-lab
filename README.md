@@ -60,3 +60,45 @@ php3还是可以的
 
 上传成功
 
+
+8. 查看源码，没有去掉小数点
+
+![image](https://user-images.githubusercontent.com/76896357/114297735-f515ce00-9ae4-11eb-8ea2-43ed44c826a2.png)
+
+直接构建.php.根据windows会自动去掉后缀名的.
+
+![image](https://user-images.githubusercontent.com/76896357/114297786-4cb43980-9ae5-11eb-8192-9794013013ed.png)
+
+9. 查看源码
+
+![image](https://user-images.githubusercontent.com/76896357/114297808-66558100-9ae5-11eb-935a-8210900e361c.png)
+
+* 忽略了::$DATA操作
+* 直接构造.php::$DATA
+
+10. 查看源代码
+
+![image](https://user-images.githubusercontent.com/76896357/114297869-c0564680-9ae5-11eb-9175-034f2ab2af30.png)
+
+这里可以让文件的后缀名抵消那些操作，最后剩下.php
+
+比如构建 .php. .
+
+![image](https://user-images.githubusercontent.com/76896357/114297900-eed42180-9ae5-11eb-9760-a66f94062e29.png)
+
+上传成功
+
+11. 查看源代码
+
+![image](https://user-images.githubusercontent.com/76896357/114297943-4d999b00-9ae6-11eb-83dc-5ac07316a4fe.png)
+
+* 用了下%00将php隐藏起来
+
+![image](https://user-images.githubusercontent.com/76896357/114298064-019b2600-9ae7-11eb-997e-b4c527556ec7.png)
+
+上传成功
+
+12. 查看源代码
+
+* 采用了POST方式传参数，因此不经过url编码，%00没用了，利用bp查看程序的16进制表达，进行00截断
+
