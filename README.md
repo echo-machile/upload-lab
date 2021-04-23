@@ -100,5 +100,21 @@ php3还是可以的
 
 12. 查看源代码
 
-* 采用了POST方式传参数，因此不经过url编码，%00没用了，利用bp查看程序的16进制表达，进行00截断
+* 采用了Get方式传参数,可以利用%00，来上传php文件
+
+![image](https://user-images.githubusercontent.com/76896357/115813096-236ca500-a425-11eb-9b59-03402c717734.png)
+
+![image](https://user-images.githubusercontent.com/76896357/115813195-52831680-a425-11eb-919c-6e12998b439d.png)
+
+
+14. 文件头检测绕过
+
+![image](https://user-images.githubusercontent.com/76896357/115815138-ff12c780-a428-11eb-9362-51a1cf985d26.png)
+
+很显然，这道题检测了文件头
+
+只需要把php一句话加在图片文件里面即可
+
+
+
 
