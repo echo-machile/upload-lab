@@ -116,5 +116,30 @@ php3还是可以的
 只需要把php一句话加在图片文件里面即可
 
 
+## 绕过的一些方法
+
+* 服务端校验--白名单
+
+- 配合Apache的解析缺陷 
+
+Apache的解析特性:会从后面开始检查后缀，按最后一个后缀开始，找到合法的后缀进行解析
+
+比如说：一段包含<?php @eval($_POST['cmd']);?>的文件，后缀名是.php.jpg,在打开文件的时候，Apache会解析php代码
+
+
+* 服务端校验--内容头的校验
+
+函数：
+
+getimagesize
+
+![image](https://user-images.githubusercontent.com/76896357/115867805-2049d700-a46e-11eb-88da-411f9b5fe10d.png)
+
+
+![image](https://user-images.githubusercontent.com/76896357/115867855-2f308980-a46e-11eb-92b8-479efeeaf7e6.png)
+
+
+![image](https://user-images.githubusercontent.com/76896357/115867889-38b9f180-a46e-11eb-9020-6819f5bc0dca.png)
+
 
 
