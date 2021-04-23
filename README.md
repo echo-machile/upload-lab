@@ -159,6 +159,22 @@ GIF89a
 
 
 
+* 日志文件
+
+![image](https://user-images.githubusercontent.com/76896357/115872157-1034f600-a474-11eb-985c-f604bdc2c5fd.png)
+
+
+* 系统环境
+
+![image](https://user-images.githubusercontent.com/76896357/115872241-280c7a00-a474-11eb-949f-4e810b073f10.png)
+
+* session
+
+![image](https://user-images.githubusercontent.com/76896357/115872304-3b1f4a00-a474-11eb-9a2e-60f130b130d1.png)
+
+session.upload_progress.enabled这个参数在php.ini默认开启，需要手动配置off，如果不是off，就会在上传的过程中生成上传进度的文件，他的存储路径可以在phpinfo(),中找到
+
+
 
 
 
